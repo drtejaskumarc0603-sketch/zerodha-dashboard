@@ -56,7 +56,7 @@ export const watchlist = [
 ];
 
 // holdings
-export const holdings = [
+export const Holdings = [
   {
     name: "BHARTIARTL",
     qty: 2,
