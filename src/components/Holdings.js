@@ -2,13 +2,13 @@ import  { useState, useEffect } from "react";
 import axios from "axios";
 import { VerticalGraph } from "./VerticalGraph";
 
- import { Holdings } from "../data/data";
+ //import { Holdings } from "../data/data";
 
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("https://zenalgo.onrender.com/allHoldings").then((res) => {
+    axios.get("http://localhost:3002/addHoldings").then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });
